@@ -10,7 +10,11 @@ otoc( t( PA4, A1, t(PA2, Ax, PA3)), A, t( t(PA4, A1, RA2), A, RA3) ) :-
 	otoc( t(PA2, Ax, PA3), A, t(RA2, A, RA3) ).
 
 permutace([],[]). 
-
 permutace(Xs,[X|Zs]):- select(X,Xs,Ys), 
-
                       permutace(Ys,Zs).
+
+allperms(In, Acc, Result) :-
+	permutace(In, Perm),
+	\+member(Perm, Acc),
+	allperms(In, [Perm| Acc], Result), !.
+allperms(_, Acc, Acc).
