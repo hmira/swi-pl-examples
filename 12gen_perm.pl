@@ -5,7 +5,8 @@ Vstupem byla čísla N a K a výstupem měla být K-tá permutace N čísel v le
 perm(4,3,P).
 P = [1,3,4,2]
 
-Plný počet bodů byl jen za řešení které postupně negeneruje všechny permutace (za to byly maximálně 4 body, ale když jste měli to řešení, co chtěli, tak to podle mě docela ocenili u ústní - alespoň u mě)
+Plný počet bodů byl jen za řešení které postupně negeneruje všechny permutace (za to byly maximálně 4 body, 
+ale když jste měli to řešení, co chtěli, tak to podle mě docela ocenili u ústní - alespoň u mě)
 */
 
 perm(N, K, Result):-
